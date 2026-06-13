@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="views.tower.RewardFXMLController"
+      alignment="TOP_CENTER"
+      spacing="30"
+      styleClass="scene-bg-white"
+      stylesheets="@../css/styles.css">
+
+    <padding><Insets top="30" right="50" bottom="30" left="50"/></padding>
+
+    <Label fx:id="floorLabel" text="Étage —" styleClass="floor-indicator"/>
+
+    <Separator/>
+
+    <Label text="RÉCOMPENSE" styleClass="title-reward"/>
+
+    <Label text="Choisissez votre récompense !" styleClass="section-subtitle"/>
+
+    <Separator/>
+
+    <VBox alignment="CENTER"
+          VBox.vgrow="ALWAYS"
+          styleClass="bonus-container">
+        <padding><Insets top="40" right="40" bottom="40" left="40"/></padding>
+
+        <Label text="[ Récompenses à implémenter  ]"
+               styleClass="subtitle-italic"/>
+    </VBox>
+
+    <Separator/>
+
+    <HBox alignment="CENTER_RIGHT">
+        <Button fx:id="nextButton" text="Suivant  ▶" styleClass="btn-blue-primary"/>
+    </HBox>
+
+</VBox>

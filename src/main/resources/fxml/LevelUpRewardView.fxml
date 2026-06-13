@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="views.combat.LevelUpRewardFXMLController"
+      alignment="TOP_CENTER"
+      spacing="30"
+      styleClass="scene-bg-white"
+      stylesheets="@../css/styles.css">
+
+    <padding><Insets top="30" right="50" bottom="30" left="50"/></padding>
+
+    <Label text="Montée de niveau !" styleClass="title-levelup"/>
+
+    <Label fx:id="bugemonNameLabel" text="Bugémon" styleClass="bugemon-name-label"/>
+
+    <Label fx:id="levelLabel" text="Niveau 1 → 2" styleClass="level-info"/>
+
+    <Separator/>
+
+    <Label text="Choisissez un bonus parmi les 3 options"
+           styleClass="section-subtitle"
+           wrapText="true"/>
+
+    <Separator/>
+
+    <VBox fx:id="bonusOptionsBox"
+          alignment="TOP_CENTER"
+          spacing="12"
+          VBox.vgrow="ALWAYS"
+          styleClass="bonus-container">
+        <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+    </VBox>
+
+    <Region VBox.vgrow="ALWAYS"/>
+
+</VBox>

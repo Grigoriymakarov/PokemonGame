@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml"
+      spacing="15"
+      alignment="CENTER"
+      prefWidth="800" prefHeight="600"
+      stylesheets="@../css/styles.css"
+      fx:controller="views.shared.HomeScreenFXMLController">
+
+    <padding>
+        <Insets top="60" right="200" bottom="60" left="200"/>
+    </padding>
+    <ImageView fitWidth="100" fitHeight="100">
+            <Image url="@../png/refaquix.png"/>
+    </ImageView>
+    <Label text="BUGÉMON" styleClass="game-title"/>
+
+    <Button fx:id="startCombatButton"
+            text="Lancer un combat"
+            styleClass="btn-home"
+            prefWidth="250" prefHeight="45"/>
+
+    <Button fx:id="startTowerButton"
+            text="Lancer la tour"
+            styleClass="btn-home"
+            prefWidth="250" prefHeight="45"/>
+
+    <Button fx:id="manageTeamsButton"
+            text="Gérer mes équipes"
+            styleClass="btn-home"
+            prefWidth="250" prefHeight="45"/>
+    <Button fx:id="leave"
+            text="Quitter"
+            styleClass="btn-home"
+            prefWidth="250" prefHeight="45"/>
+
+
+
+</VBox>

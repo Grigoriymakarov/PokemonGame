@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="views.tower.endscreen.IntermediateLoseFXMLController"
+      alignment="TOP_CENTER"
+      spacing="20"
+      styleClass="scene-bg-white"
+      stylesheets="@../css/styles.css">
+
+    <padding><Insets top="30" right="50" bottom="30" left="50"/></padding>
+
+    <Label fx:id="floorLabel" text="Étage —" styleClass="floor-indicator"/>
+
+    <!-- TITRE -->
+    <Label text="DÉFAITE" styleClass="title-lose"/>
+
+    <Label text="Vous avez été vaincu par l'adversaire." styleClass="section-subtitle"/>
+
+    <Separator/>
+
+    <!-- BUGEMON DETAILS -->
+    <Label text="État de votre équipe" styleClass="section-header-dark"/>
+
+    <ScrollPane fitToWidth="true" VBox.vgrow="ALWAYS" styleClass="scroll-container">
+        <VBox fx:id="vboxBugemons" spacing="8" styleClass="scroll-inner">
+        </VBox>
+    </ScrollPane>
+
+    <Separator/>
+
+    <!-- BUTTONS -->
+    <HBox alignment="CENTER" spacing="20">
+        <Button fx:id="mainmenuButton" text="Menu Principal" styleClass="btn-menu"/>
+        <Button fx:id="again" text="◀  Recommencer" styleClass="btn-lose-retry"/>
+    </HBox>
+
+</VBox>

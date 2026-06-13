@@ -1,0 +1,13 @@
+image: maven:4.0.0-rc-5-ibm-semeru-25-noble
+
+stages:
+  - test
+
+variables:
+  MAVEN_OPTS: "-Dmaven.repo.local=$CI_PROJECT_DIR/.m2/repositories"
+
+test:
+  stage: test
+  script:
+    - mvn clean compile test
+

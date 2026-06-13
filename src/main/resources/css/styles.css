@@ -1,0 +1,414 @@
+/* ===== BACKGROUNDS ===== */
+.scene-bg-white {
+    -fx-background-color: #ffffff;
+}
+
+/* ===== SCREEN TITLES ===== */
+.game-title {
+    -fx-font-weight: bold;
+    -fx-font-size: 48px;
+}
+
+.combat-title {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+}
+
+.title-win {
+    -fx-font-size: 42px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2e7d32;
+    -fx-font-family: 'Arial Black';
+}
+
+.title-lose {
+    -fx-font-size: 42px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #c62828;
+    -fx-font-family: 'Arial Black';
+}
+
+.title-levelup {
+    -fx-font-size: 42px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1565c0;
+    -fx-font-family: 'Arial Black';
+}
+
+.title-reward {
+    -fx-font-size: 42px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1565c0;
+    -fx-font-family: 'Arial Black';
+}
+
+/* ===== LABELS ===== */
+.floor-indicator {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Arial';
+}
+
+.floor-name {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.step-label {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.step-label-boss {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #b22222;
+}
+
+.character-name {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.hp-label {
+    -fx-font-size: 12px;
+}
+
+.hp-label-small {
+    -fx-font-size: 11px;
+    -fx-text-fill: #555555;
+}
+
+.xp-label {
+    -fx-font-size: 11px;
+    -fx-text-fill: #555555;
+}
+
+.section-header {
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+
+.section-header-dark {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-font-family: 'Arial';
+}
+
+.section-subtitle {
+    -fx-font-size: 14px;
+    -fx-text-fill: #555555;
+    -fx-font-family: 'Arial';
+}
+
+.bugemon-name-label {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-font-family: 'Arial';
+}
+
+.level-info {
+    -fx-font-size: 16px;
+    -fx-text-fill: #666666;
+    -fx-font-family: 'Arial';
+}
+
+.attack-name {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.effectiveness-label {
+    -fx-text-fill: #cccccc;
+    -fx-font-size: 11px;
+    -fx-font-style: italic;
+}
+
+/* ===== BUGEMON CARDS (win/lose screens) ===== */
+.bugemon-card {
+    -fx-background-color: #f9f9f9;
+    -fx-border-color: #dddddd;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-padding: 10;
+}
+
+.bugemon-card-name {
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+}
+
+.level-badge {
+    -fx-background-color: #2e7d32;
+    -fx-text-fill: white;
+    -fx-padding: 2 7 2 7;
+    -fx-background-radius: 3px;
+    -fx-font-size: 11px;
+}
+
+.xp-bar {
+    -fx-accent: #1565c0;
+}
+
+/* ===== CONTAINERS ===== */
+.scroll-container {
+    -fx-background: white;
+    -fx-background-color: white;
+    -fx-border-color: #dddddd;
+    -fx-border-width: 1px;
+    -fx-border-radius: 4px;
+}
+
+.scroll-inner {
+    -fx-background-color: #ffffff;
+    -fx-padding: 12;
+}
+
+.list-panel {
+    -fx-background-color: #f4f4f4;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 5;
+}
+
+.bonus-container {
+    -fx-background-color: #f5f5f5;
+    -fx-border-color: #dddddd;
+    -fx-border-width: 1px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+}
+
+.switch-entry {
+    -fx-alignment: center;
+    -fx-padding: 4;
+}
+
+.dialog-content {
+    -fx-padding: 20;
+    -fx-alignment: center;
+}
+
+/* ===== TEAMS ===== */
+.card-selected {
+    -fx-background-color: lightgreen;
+}
+
+.team-slot {
+    -fx-background-color: #e0e0e0;
+    -fx-padding: 10;
+    -fx-border-radius: 5;
+}
+
+.teams-list-btn {
+    -fx-background-color: #dde3f0;
+    -fx-alignment: CENTER-LEFT;
+    -fx-padding: 10;
+    -fx-border-color: #c0c0c0;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-radius: 0;
+}
+
+/* ===== COMBAT BUTTONS ===== */
+.btn-attack {
+    -fx-background-color: #e03060;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+}
+
+.btn-switch {
+    -fx-background-color: #4080c0;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+}
+
+.btn-item {
+    -fx-background-color: #f0a020;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+}
+
+.btn-forfeit {
+    -fx-background-color: #808080;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+}
+
+.btn-back {
+    -fx-background-color: #808080;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+}
+
+/* Base shape for dynamic attack slots (color set at runtime) */
+.attack-slot {
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+/* ===== NAVIGATION BUTTONS ===== */
+.btn-home {
+    -fx-background-color: #4080c0;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-background-radius: 8;
+}
+
+.btn-primary {
+    -fx-background-color: #4080c0;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+}
+
+.btn-confirm {
+    -fx-background-color: #40a060;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+}
+
+.btn-cancel {
+    -fx-background-color: #c04040;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+}
+
+.btn-menu {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #333333;
+    -fx-font-size: 13px;
+    -fx-border-color: #aaaaaa;
+    -fx-border-width: 1px;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-padding: 8 20 8 20;
+    -fx-cursor: hand;
+}
+
+.btn-win-next {
+    -fx-background-color: #2e7d32;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-border-color: #1b5e20;
+    -fx-border-width: 1px;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-padding: 8 20 8 20;
+    -fx-cursor: hand;
+}
+
+.btn-lose-retry {
+    -fx-background-color: #c62828;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-border-color: #8b0000;
+    -fx-border-width: 1px;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-padding: 8 20 8 20;
+    -fx-cursor: hand;
+}
+
+.btn-blue-primary {
+    -fx-background-color: #1565c0;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-border-color: #0d47a1;
+    -fx-border-width: 1px;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-padding: 10 28 10 28;
+    -fx-cursor: hand;
+}
+
+/* ===== SWITCH DIALOG ===== */
+.switch-btn {
+    -fx-font-size: 14px;
+    -fx-padding: 10;
+    -fx-min-width: 140px;
+}
+
+/* ===== BONUS BUTTONS (level-up screen) ===== */
+.bonus-btn {
+    -fx-font-size: 14px;
+    -fx-padding: 15px;
+    -fx-background-color: #e3f2fd;
+    -fx-text-fill: #1565c0;
+    -fx-border-color: #1565c0;
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+}
+
+.bonus-btn:hover {
+    -fx-background-color: #1565c0;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #0d47a1;
+}
+
+/* ===== ATTACK SLOTS ===== */
+.attack-slot-empty {
+    -fx-background-color: #808080;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-cursor: not-allowed;
+}
+
+/* ===== SWITCH DIALOG ===== */
+.switch-row {
+    -fx-alignment: center;
+    -fx-padding: 4;
+}
+
+.bugemon-switch-button {
+    -fx-font-size: 14px;
+    -fx-padding: 10;
+    -fx-min-width: 140px;
+}
+
+/* ===== DIALOG CONTENT ===== */
+.dialog-content-padded {
+    -fx-padding: 20;
+    -fx-alignment: center;
+}
+
+/* ===== INVENTORY/SHOP ===== */
+.scroll-transparent {
+    -fx-background: transparent;
+}
+
+.item-selected {
+    -fx-background-color: lightgreen;
+}
+
+/* ===== MISCELLANEOUS ===== */
+.subtitle-italic {
+    -fx-font-size: 16px;
+    -fx-text-fill: #aaaaaa;
+    -fx-font-style: italic;
+}

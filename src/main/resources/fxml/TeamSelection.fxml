@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      spacing="20"
+      alignment="CENTER"
+      stylesheets="@../css/styles.css"
+      fx:controller="views.team.TeamSelectionFXMLController">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="BUGEMONS DISPONIBLES" styleClass="section-header" />
+
+    <ScrollPane fitToWidth="true"
+                VBox.vgrow="ALWAYS">
+
+            <FlowPane fx:id="bugedexGrid"
+                      hgap="20"
+                      vgap="20"
+                      alignment="CENTER">
+
+                <padding>
+                    <Insets top="10" right="10" bottom="10" left="10"/>
+                </padding>
+
+            </FlowPane>
+
+    </ScrollPane>
+
+    <Label text="TON EQUIPE (MAX 6)" styleClass="section-header" />
+
+    <HBox fx:id="teamBar"
+          spacing="15"
+          alignment="CENTER"
+          prefHeight="100"
+          styleClass="list-panel"/>
+
+    <HBox spacing="15" alignment="CENTER">
+        <Button fx:id="confirmButton"
+                text="Valider"
+                styleClass="btn-confirm"
+                prefWidth="200" prefHeight="50"/>
+        <Button fx:id="saveButton"
+                text="Sauvegarder équipe"
+                styleClass="btn-confirm"
+                prefWidth="200" prefHeight="50"/>
+        <Button fx:id="loadButton"
+                text="Charger équipe"
+                styleClass="btn-confirm"
+                prefWidth="200" prefHeight="50"/>
+    </HBox>
+
+</VBox>
